@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface");
+html,
+body,
+div,
+span,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+img,
+ol,
+ul,
+li,
+input,
+label,
+select,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+footer,
+header,
+menu,
+nav,
+section,
+video {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  list-style: none;
+  border: 0;
+}
+body {
+  background-color: #3399ff;
+}
+#welcome-div {
+  color: white;
+  width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  text-align: center;
+}
+
+#welcome-h1 {
+  font-size: 100px;
+}
+
+#rules-div {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  background-color: whitesmoke;
+  border-radius: 100px;
+  text-align: center;
+}
+
+#rules-h3 {
+  font-size: 70px;
+}
+
+#rules-ol {
+  max-width: 650px;
+  counter-reset: my-awesome-counter;
+  list-style: none;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+}
+ol li {
+  margin: 0 0 0.5rem 0;
+  counter-increment: my-awesome-counter;
+  position: relative;
+  padding-bottom: 10px;
+}
+ol li::before {
+  content: counter(my-awesome-counter);
+  color: #3399ff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: absolute;
+  --size: 32px;
+  left: calc(-1 * var(--size) - 10px);
+  line-height: var(--size);
+  width: var(--size);
+  height: var(--size);
+  top: 0;
+  transform: rotate(-10deg);
+  background: black;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 1px 1px 0 #999;
+}
+
+#start-new-div {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding-top: 15px;
+}
+
+#start-new {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 10%;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: whitesmoke;
+}
+#choice-div {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+#rock-button {
+  width: 100px;
+  border-radius: 10px;
+}
+#paper-button {
+  width: 100px;
+  border-radius: 10px;
+}
+#scissors-button {
+  width: 100px;
+  border-radius: 10px;
+}
