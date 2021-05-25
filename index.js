@@ -5,7 +5,23 @@ let computerChoice = "";
 let userScore = 0;
 let computerScore = 0;
 let gameOver = false;
-console.log("jetta");
+let rockElem = document.getElementById("rock-button");
+let paperElem = document.getElementById("paper-button");
+let scissorElem = document.getElementById("scissors-button");
+
+function rockClick() {
+  console.log("you clicked on rock");
+}
+function paperClick() {
+  console.log("you clicked on paper");
+}
+function scissorsClick() {
+  console.log("you clicked on scissors");
+}
+
+rockElem.addEventListener("click", rockClick);
+paperElem.addEventListener("click", paperClick);
+scissorElem.addEventListener("click", scissorsClick);
 
 function computerMove() {
   let number = Math.random() * 100;
