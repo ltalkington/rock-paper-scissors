@@ -14,12 +14,24 @@
         <li>Wait to see if you have beat the computer!</li>
         <li>Your total wins against the computer will be counted below.</li>
       </ol>
+      <div id="scoreboard" class="hidden">
+        <div id="player-scoreboard">
+          <h1 class="scoreboard-header">Your Score</h1>
+          <h1 id="player-score" class="scoreboard-header">0</h1>
+        </div>
+        <div id="computer-scoreboard">
+          <h1 class="scoreboard-header">Computer Score</h1>
+          <h1 id="computer-score" class="scoreboard-header">0</h1>
+        </div>
+      </div>
+      <div id="game-description" class="hidden">
+        <p>Please pick either Rock, Paper, or Scissors</p>
+      </div>
     </div>
-    <div id="start-new-div">
-      <button id="start-new">Start New Game</button>
+    <div id="start-new-div" class="start-new-div">
+      <button id="start-new" class="start-new">Start New Game</button>
     </div>
-
-    <div id="choice-div">
+    <div id="choice-div" class="hidden">
       <div>
         <h1>Rock</h1>
         <img id="rock-button" type="image" src="rock.jpg" />
@@ -32,6 +44,9 @@
         <h1>Scissors</h1>
         <img id="scissors-button" type="image" src="scissors.jpg" />
       </div>
+    </div>
+    <div id="restart-button-div" class="hidden start-new-div">
+      <button id="restart-button" class="start-new">Click to Restart</button>
     </div>
     <script src="index.js"></script>
   </body>
